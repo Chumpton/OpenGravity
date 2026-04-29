@@ -281,16 +281,6 @@ h2 {
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .figure-container {
-        flex-direction: column;
-    }
-    .figure-img {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-}
 
 .dedication {
     text-align: center;
@@ -347,11 +337,6 @@ footer a:hover {
     border-bottom: 1px solid #ccc;
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 5rem;
-    }
-}
 
 /* Nav Menu */
 .top-nav {
@@ -486,6 +471,75 @@ footer a:hover {
     color: #ddd;
     margin-bottom: 20px;
     line-height: 1.6;
+}
+
+/* Comprehensive Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .infinity-logo {
+        font-size: 2.2rem;
+        margin-bottom: -20px;
+    }
+    header h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    header p {
+        font-size: 1.1rem;
+        margin-top: -5px;
+    }
+    .hero-gif {
+        width: 100%;
+        max-width: 280px;
+    }
+    section {
+        padding: 25px 20px;
+    }
+    .info-text, .rig-text, .figure-text {
+        padding: 20px;
+    }
+    h2, .rig-text h2, .figure-text h2, .info-text h2 {
+        font-size: 1.6rem;
+    }
+    .info-text p, .rig-text p, .figure-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .equation {
+        font-size: 0.9rem;
+        padding: 15px;
+        margin: 20px 0;
+    }
+    .figure-container {
+        flex-direction: column;
+    }
+    .figure-img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .parts-list li {
+        font-size: 0.95rem;
+    }
+    .text-modal {
+        padding: 20px;
+        width: 95vw;
+    }
+    .modal-body h2 {
+        font-size: 1.5rem;
+    }
+    .modal-body p {
+        font-size: 1rem;
+    }
+    .dedication {
+        margin: 40px auto 20px auto;
+    }
 }
 
 
