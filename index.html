@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenGravity | A DeSci Experiment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="OpenGravity is a DeSci experiment to expose antigravity and free energy. Submit and validate breakthroughs.">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <canvas id="stars"></canvas>
+    
+    <div class="content">
+        <nav class="top-nav">
+            <a href="#" id="menu-dimension">Dimension Viewer</a>
+        </nav>
+        
+        <header>
+            <div class="infinity-logo">&infin;</div>
+            <h1>OpenGravity</h1>
+            <p>A DeSci experiment to expose antigravity and free energy.</p>
+        </header>
+
+        <section class="info-text">
+            <h2>The Mission</h2>
+            <p>OpenGravity is dedicated to cracking the code of metric engineering by bringing historically suppressed or heavily siloed antigravity and free energy research into the light of public, decentralized science. We believe that manipulating the stress-energy tensor is not just theoretical—it is an engineering challenge that belongs to humanity.</p>
+            <p><strong>What's Next:</strong> We are deploying the Aetherius V1 Torsion Rig as our first open-source hardware node. Our goal is to crowdsource telemetry from independent engineers worldwide, correlating localized mass fluctuations on an immutable ledger to definitively prove—and eventually harness—these anomalies.</p>
+        </section>
+
+        <div class="gif-container">
+            <img src="STILL2-square640-v3.gif" alt="OpenGravity Artifact" class="hero-gif">
+        </div>
+
+        <section class="info-text">
+            <h2>Metric Engineering</h2>
+            <p>Antigravity and free energy are two sides of the same coin: Metric Engineering. Antigravity manipulates spacetime curvature (g<sub>&mu;&nu;</sub>) to negate weight, while free energy taps the same vacuum fluctuations (V<sub>vac</sub>) that create that curvature. By "glitching" the stress-energy tensor, we decouple from the grid and the ground simultaneously.</p>
+            
+            <div class="equation">
+                $$ R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu} $$
+            </div>
+
+            <p>We open-source this by hosting immutable data on decentralized ledgers, ensuring "born-secret" tech remains public. Contribute by hosting a Genesis Node, building the Aetherius Rig from our shared CAD files, or logging telemetry to the global mesh.</p>
+        </section>
+
+        <section class="rig-section">
+            <img src="aetherius-rig.png" alt="Aetherius V1 Torsion Rig" class="rig-image">
+            <div class="rig-text">
+                <h2>Aetherius V1 Torsion Rig</h2>
+                <p><strong>The first experiment we can all log from to observe mass fluctuations in a vacuum.</strong></p>
+                <p>The Aetherius V1 Torsion Rig is a precision instrument for detecting extremely small changes in mass or local gravitational effects. A lightweight beam is suspended by a fine filament inside a vacuum chamber to eliminate noise. One side holds a layered bismuth–magnesium test mass, while the other balances it. External electromagnetic or terahertz pulses stimulate the test material, potentially altering its effective mass. A laser reflects off a mirror on the beam to measure tiny angular shifts. Sensors track environmental interference, and onboard electronics transmit data. By comparing oscillation changes before and after excitation, the system identifies potential "metric anomalies."</p>
+                
+                <h3>Key Components</h3>
+                <ul class="parts-list">
+                    <li><strong>Housing:</strong> Vacuum-sealed glass chamber to eliminate air currents and thermal drift.</li>
+                    <li><strong>Torsion Filament:</strong> 25-50 micron Tungsten or Quartz with high-tensile strength.</li>
+                    <li><strong>Test Mass (A):</strong> 10g multilayered "Eskridge" foil alternating 0.1mm layers of Bismuth and Magnesium.</li>
+                    <li><strong>Counter Mass (B):</strong> 10g inert Brass or Lead standardized weight.</li>
+                    <li><strong>Exciter:</strong> Variable-frequency EM Coil (0.1 to 3.0 THz target frequency).</li>
+                    <li><strong>Optical Lever:</strong> 5mW stabilized laser diode bouncing off a 5mm dielectric mirror to a CMOS position sensor.</li>
+                    <li><strong>Telemetry:</strong> ESP32-WROOM-32 Controller integrating BME280 (Temp/Pressure) and MPU6050 (Motion) sensors via MQTT.</li>
+                </ul>
+                
+                <button id="btn-submit-research" class="action-btn">Submit Invention or Research</button>
+            </div>
+        </section>
+
+        <section class="figure-section">
+            <div class="figure-container">
+                <img src="tesla.png" alt="Nikola Tesla" class="figure-img">
+                <div class="figure-text">
+                    <h2>Nikola Tesla</h2>
+                    <blockquote>"If you want to find the secrets of the universe, think in terms of energy, frequency and vibration."</blockquote>
+                    <p>Tesla’s pioneering work on resonant frequencies, radiant energy, and zero-point fields laid the groundwork for modern metric engineering. His theories on a ubiquitous, energetic aether suggest that gravity is not an intrinsic property of mass, but an interaction of electromagnetic waves with this energetic vacuum. By applying high-frequency, high-voltage fields, we aim to recreate the energetic isolation necessary to decouple mass from local gravity.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="figure-section">
+            <div class="figure-container">
+                <img src="einstein.png" alt="Albert Einstein" class="figure-img">
+                <div class="figure-text">
+                    <h2>Albert Einstein</h2>
+                    <blockquote>"Physical objects are not in space, but these objects are spatially extended... there is no empty space without a field."</blockquote>
+                    <p>Einstein’s General Relativity unified gravity with the curvature of spacetime. By treating the stress-energy tensor mathematically, his equations imply that spacetime is a pliable medium. While Einstein focused on the curvature caused by massive bodies, our project explores manipulating the tensor artificially. If spacetime is a field, then directed, coherent electromagnetic resonance can theoretically un-bend or locally invert that field, nullifying gravity.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="dedication">
+            <img src="researchers.png" alt="Noble Researchers" class="dedication-img">
+            <p>Dedicated to the noble researchers who have passed in the pursuit of discovery.</p>
+        </div>
+
+        <footer>
+            <p>Submit data and feedback to <a href="https://instagram.com/camptons.world" target="_blank">@camptons.world</a> on Instagram.</p>
+            <p>OpenGravity is an <a href="https://github.com/OpenGravity" target="_blank">Open Source</a> website.</p>
+        </footer>
+    </div>
+    
+    <div id="dimension-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <iframe src="DimensionViewer/index.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div id="submit-modal" class="modal hidden">
+        <div class="modal-content text-modal">
+            <button id="close-submit-modal" class="close-btn">&times;</button>
+            <div class="modal-body">
+                <h2>Submit Your Findings</h2>
+                <p>We are currently gathering all independent research, blueprints, and data directly through secure direct messaging.</p>
+                <p>Please message <strong>@camptons.world</strong> on Instagram with your information, findings, and any relevant data logs.</p>
+                <a href="https://instagram.com/camptons.world" target="_blank" class="action-btn">Message @camptons.world</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
