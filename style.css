@@ -38,15 +38,15 @@ header {
     margin-bottom: 100px;
 }
 
-.infinity-logo {
-    font-size: 3rem;
-    font-weight: 200;
-    color: #fff;
-    margin-bottom: -50px;
+.site-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: -30px;
     position: relative;
     z-index: 2;
-    opacity: 0.7;
+    opacity: 0.9;
     animation: pulse 4s ease-in-out infinite;
+    mix-blend-mode: screen;
 }
 
 @keyframes pulse {
@@ -349,6 +349,11 @@ footer a:hover {
     top: 0;
     left: 0;
     z-index: 100;
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-nav.nav-hidden {
+    transform: translateY(-100%);
 }
 
 .top-nav a {
@@ -479,9 +484,9 @@ footer a:hover {
         margin-top: 100px;
         margin-bottom: 50px;
     }
-    .infinity-logo {
-        font-size: 2.2rem;
-        margin-bottom: -20px;
+    .site-logo {
+        width: 50px;
+        margin-bottom: -15px;
     }
     header h1 {
         font-size: 3.5rem;

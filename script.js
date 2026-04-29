@@ -132,3 +132,18 @@ submitModal.addEventListener('click', (e) => {
         submitModal.classList.add('hidden');
     }
 });
+
+// Nav Scroll Logic
+let lastScrollY = window.scrollY;
+const topNav = document.querySelector('.top-nav');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        // Scrolling down
+        topNav.classList.add('nav-hidden');
+    } else {
+        // Scrolling up
+        topNav.classList.remove('nav-hidden');
+    }
+    lastScrollY = window.scrollY;
+});
