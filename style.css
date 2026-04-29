@@ -138,6 +138,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+.impact-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .info-text p:last-child {
     margin-bottom: 0;
 }
