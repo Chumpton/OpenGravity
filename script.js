@@ -136,14 +136,21 @@ submitModal.addEventListener('click', (e) => {
 // Nav Scroll Logic
 let lastScrollY = window.scrollY;
 const topNav = document.querySelector('.top-nav');
+let ticking = false;
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > lastScrollY && window.scrollY > 100) {
-        // Scrolling down
-        topNav.classList.add('nav-hidden');
-    } else {
-        // Scrolling up
-        topNav.classList.remove('nav-hidden');
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scrolling down
+                topNav.classList.add('nav-hidden');
+            } else {
+                // Scrolling up
+                topNav.classList.remove('nav-hidden');
+            }
+            lastScrollY = window.scrollY;
+            ticking = false;
+        });
+        ticking = true;
     }
-    lastScrollY = window.scrollY;
-});
+}, { passive: true });

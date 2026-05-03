@@ -515,6 +515,11 @@ footer a:hover {
         width: 100%;
         max-width: 280px;
     }
+    section, .info-text, .rig-section, .figure-section {
+        backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateZ(0); /* force hardware acceleration */
+    }
     section {
         padding: 25px 20px;
     }
